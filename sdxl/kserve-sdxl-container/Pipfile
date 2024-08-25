@@ -1,0 +1,27 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[[source]]
+url = "https://download.pytorch.org/whl/cu121/"
+verify_ssl = false
+name = "pytorch"
+
+[packages]
+accelerate = "~=0.33.0"
+diffusers = "~=0.30.1"
+fastapi = "~=0.109.1"
+httpx = "~=0.26.0"
+kserve = "~=0.13.1"
+torch = {version = "==2.4.0+cu121", index = "pytorch"}
+transformers = "~=4.43.4"
+uvicorn = {version = "~=0.21.1", extras = ["standard"]}
+setuptools = "~=73.0.1"
+pip = "~=24.2"
+
+
+[dev-packages]
+
+[requires]
+python_version = "3.11"

@@ -1,0 +1,6 @@
+.venv
+.ipynb_checkpoints/
+*.pem
+*.env
+.vscode
+*.safetensors
